@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta - Museos del Jamón</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="estilos/jamon.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Museos del Jamón en España</h1>
+        <p class="subtitulo">Registro de usuario</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#badajoz">Monesterio</a></li>
+            <li><a href="index.html#huelva">Aracena</a></li>
+            <li><a href="index.html#teruel">Calamocha</a></li>
+            <li><a href="index.html#granada">La Alpujarra</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-formulario">
+
+        <div class="caja-formulario">
+
+            <h1>Formulario de creación de cuenta</h1>
+            <p class="subtitulo-form">Únete a la comunidad de amantes del jamón ibérico</p>
+
+            <hr class="separador">
+
+            <form id="formulario-registro" novalidate>
+
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                    <span class="mensaje-error" id="error-nombre">Por favor, introduce tu nombre.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido1">Apellido 1:</label>
+                    <input type="text" id="apellido1" name="apellido1" placeholder="Primer apellido">
+                    <span class="mensaje-error" id="error-apellido1">Por favor, introduce tu primer apellido.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido2">Apellido 2: <span class="opcional">(opcional)</span></label>
+                    <input type="text" id="apellido2" name="apellido2" placeholder="Segundo apellido">
+                </div>
+
+                <div class="campo">
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                    <span class="mensaje-error" id="error-fecha">Por favor, introduce tu fecha de nacimiento.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="text" id="email" name="email" placeholder="ejemplo@correo.com">
+                    <span class="mensaje-error" id="error-email">Por favor, introduce un correo electrónico válido
+                        (texto@texto.texto).</span>
+                </div>
+
+                <div class="campo">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Mínimo 8 caracteres">
+                    <span class="mensaje-error" id="error-contrasena">La contraseña debe tener al menos 8
+                        caracteres.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="repetirContrasena">Repetir contraseña:</label>
+                    <input type="password" id="repetirContrasena" name="repetirContrasena"
+                        placeholder="Repite tu contraseña">
+                    <span class="mensaje-error" id="error-repetir">Las contraseñas no coinciden.</span>
+                </div>
+
+                <button type="button" class="btn-enviar" onclick="validarFormulario()">Crear cuenta</button>
+
+            </form>
+
+            <div class="mensaje-exito" id="mensaje-exito">
+                <strong id="texto-exito">¡Cuenta creada con éxito!</strong>
+                <span>Bienvenido/a a la comunidad de los Museos del Jamón.</span>
+            </div>
+
+            <a href="index.html" class="enlace-volver">← Volver a la página principal</a>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© Mabel Rincón - Trabajo para la asignatura de Lenguajes de marcas - 2025</p>
+    </footer>
+
+    <script src="validaciones.js"></script>
+</body>
+
+</html>
