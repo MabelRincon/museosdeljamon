@@ -1,4 +1,4 @@
-# 🥩 Museos del Jamón — Proyecto JavaScript Ev2
+# Museos del Jamón — Proyecto JavaScript Ev2
 
 Sitio web temático sobre los **Museos del Jamón** desarrollado como proyecto de evaluación para el módulo de JavaScript. Incluye una página principal y un formulario de creación de cuenta con validaciones en JavaScript.
 
